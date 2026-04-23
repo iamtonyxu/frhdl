@@ -1,0 +1,75 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.13871",
+   "Default View_TopLeft":"-543,2",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port s_axi_phy -pg 1 -lvl 0 -x -20 -y 170 -defaultsOSRD
+preplace port s_axi_rx -pg 1 -lvl 0 -x -20 -y 110 -defaultsOSRD
+preplace port s_axi_tx -pg 1 -lvl 0 -x -20 -y 670 -defaultsOSRD
+preplace port qpll_refclk -pg 1 -lvl 0 -x -20 -y 210 -defaultsOSRD
+preplace port s_axi_aclk -pg 1 -lvl 0 -x -20 -y 250 -defaultsOSRD
+preplace port core_clk -pg 1 -lvl 0 -x -20 -y 390 -defaultsOSRD
+preplace port s_axi_aresetn -pg 1 -lvl 0 -x -20 -y 490 -defaultsOSRD
+preplace port rx_aresetn -pg 1 -lvl 3 -x 890 -y 170 -defaultsOSRD
+preplace port rx_tvalid -pg 1 -lvl 3 -x 890 -y 110 -defaultsOSRD
+preplace port sysref_in -pg 1 -lvl 0 -x -20 -y 840 -defaultsOSRD
+preplace port rx_sync -pg 1 -lvl 3 -x 890 -y 290 -defaultsOSRD
+preplace port tx_aresetn -pg 1 -lvl 3 -x 890 -y 820 -defaultsOSRD
+preplace port tx_tready -pg 1 -lvl 3 -x 890 -y 590 -defaultsOSRD
+preplace port tx_sync -pg 1 -lvl 0 -x -20 -y 870 -defaultsOSRD
+preplace port tx_reset_0 -pg 1 -lvl 0 -x -20 -y 310 -defaultsOSRD
+preplace port rx_reset_0 -pg 1 -lvl 0 -x -20 -y 330 -defaultsOSRD
+preplace portBus txp_out -pg 1 -lvl 3 -x 890 -y 350 -defaultsOSRD
+preplace portBus txn_out -pg 1 -lvl 3 -x 890 -y 370 -defaultsOSRD
+preplace portBus rxp_in -pg 1 -lvl 0 -x -20 -y 350 -defaultsOSRD
+preplace portBus rxn_in -pg 1 -lvl 0 -x -20 -y 370 -defaultsOSRD
+preplace portBus rx_tdata -pg 1 -lvl 3 -x 890 -y 90 -defaultsOSRD
+preplace portBus rx_start_of_frame -pg 1 -lvl 3 -x 890 -y 190 -defaultsOSRD
+preplace portBus rx_start_of_multiframe -pg 1 -lvl 3 -x 890 -y 230 -defaultsOSRD
+preplace portBus tx_start_of_frame -pg 1 -lvl 3 -x 890 -y 780 -defaultsOSRD
+preplace portBus tx_start_of_multiframe -pg 1 -lvl 3 -x 890 -y 800 -defaultsOSRD
+preplace portBus tx_tdata -pg 1 -lvl 0 -x -20 -y 710 -defaultsOSRD
+preplace inst jesd204_phy -pg 1 -lvl 1 -x 250 -y 330 -defaultsOSRD
+preplace inst jesd204_rx -pg 1 -lvl 2 -x 680 -y 180 -defaultsOSRD
+preplace inst jesd204_tx -pg 1 -lvl 2 -x 680 -y 770 -defaultsOSRD
+preplace netloc jesd204_rx_rx_reset_gt 1 0 3 90 60 510J 350 850
+preplace netloc jesd204_tx_gt_prbssel_out 1 0 3 70 40 500J 380 870
+preplace netloc jesd204_phy_tx_reset_done 1 1 1 400 380n
+preplace netloc jesd204_phy_rx_reset_done 1 1 1 450 150n
+preplace netloc jesd204_rx_rxencommaalign_out 1 0 3 60 10 NJ 10 850
+preplace netloc qpll_refclk_0_1 1 0 1 30 210n
+preplace netloc s_axi_aclk_0_1 1 0 2 50 80 410
+preplace netloc jesd204_phy_txp_out 1 1 2 460J 360 870J
+preplace netloc jesd204_phy_txn_out 1 1 2 420J 370 NJ
+preplace netloc rxp_in_0_1 1 0 1 NJ 350
+preplace netloc rxn_in_0_1 1 0 1 NJ 370
+preplace netloc rx_core_clk_0_1 1 0 2 40 70 440
+preplace netloc s_axi_aresetn_0_1 1 0 2 0 550 480
+preplace netloc jesd204_rx_rx_aresetn 1 2 1 NJ 170
+preplace netloc jesd204_rx_rx_tdata 1 2 1 NJ 90
+preplace netloc jesd204_rx_rx_tvalid 1 2 1 NJ 110
+preplace netloc jesd204_rx_rx_start_of_frame 1 2 1 NJ 190
+preplace netloc jesd204_rx_rx_start_of_multiframe 1 2 1 NJ 230
+preplace netloc tx_sysref_0_1 1 0 2 NJ 840 490
+preplace netloc jesd204_rx_rx_sync 1 2 1 NJ 290
+preplace netloc jesd204_tx_tx_start_of_frame 1 2 1 NJ 780
+preplace netloc jesd204_tx_tx_start_of_multiframe 1 2 1 NJ 800
+preplace netloc jesd204_tx_tx_aresetn 1 2 1 NJ 820
+preplace netloc tx_tdata_0_1 1 0 2 NJ 710 NJ
+preplace netloc jesd204_tx_tx_tready 1 1 2 510 590 NJ
+preplace netloc tx_sync_0_1 1 0 2 NJ 870 NJ
+preplace netloc tx_reset_0_2 1 0 2 10 830 NJ
+preplace netloc rx_reset_1_1 1 0 2 20 90 490J
+preplace netloc jesd204_tx_tx_reset_gt 1 0 3 80 50 470J 400 860
+preplace netloc jesd204_tx_gt0_tx 1 0 3 100 100 430J 390 850
+preplace netloc s_axi_0_1 1 0 1 NJ 170
+preplace netloc jesd204_phy_gt0_rx 1 1 1 420 130n
+preplace netloc s_axi_0_2 1 0 2 NJ 670 NJ
+preplace netloc s_axi_0_3 1 0 2 NJ 110 NJ
+levelinfo -pg 1 -20 250 680 890
+pagesize -pg 1 -db -bbox -sgen -160 0 1110 930
+"
+}
+

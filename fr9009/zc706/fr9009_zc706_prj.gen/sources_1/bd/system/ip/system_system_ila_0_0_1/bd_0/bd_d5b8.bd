@@ -1,0 +1,756 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xC72FEF5BC6723AFF",
+      "design_src": "SBD",
+      "device": "xc7z045ffg900-2",
+      "name": "bd_d5b8",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "scoped": "true",
+      "synth_flow_mode": "None",
+      "tool_version": "2022.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "ila_lib": ""
+    },
+    "interface_ports": {
+      "SLOT_0_JESD204_RX_BUS": {
+        "mode": "Monitor",
+        "vlnv_bus_definition": "xilinx.com:display_jesd204:jesd204_rx_bus:1.0",
+        "vlnv": "xilinx.com:display_jesd204:jesd204_rx_bus_rtl:1.0",
+        "port_maps": {
+          "rxcharisk": {
+            "physical_name": "SLOT_0_JESD204_RX_BUS_rxcharisk",
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "rxdata": {
+            "physical_name": "SLOT_0_JESD204_RX_BUS_rxdata",
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "rxdisperr": {
+            "physical_name": "SLOT_0_JESD204_RX_BUS_rxdisperr",
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "rxnotintable": {
+            "physical_name": "SLOT_0_JESD204_RX_BUS_rxnotintable",
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "SLOT_1_JESD204_RX_BUS": {
+        "mode": "Monitor",
+        "vlnv_bus_definition": "xilinx.com:display_jesd204:jesd204_rx_bus:1.0",
+        "vlnv": "xilinx.com:display_jesd204:jesd204_rx_bus_rtl:1.0",
+        "port_maps": {
+          "rxcharisk": {
+            "physical_name": "SLOT_1_JESD204_RX_BUS_rxcharisk",
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "rxdata": {
+            "physical_name": "SLOT_1_JESD204_RX_BUS_rxdata",
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "rxdisperr": {
+            "physical_name": "SLOT_1_JESD204_RX_BUS_rxdisperr",
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "rxnotintable": {
+            "physical_name": "SLOT_1_JESD204_RX_BUS_rxnotintable",
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "SLOT_2_JESD204_RX_BUS": {
+        "mode": "Monitor",
+        "vlnv_bus_definition": "xilinx.com:display_jesd204:jesd204_rx_bus:1.0",
+        "vlnv": "xilinx.com:display_jesd204:jesd204_rx_bus_rtl:1.0",
+        "port_maps": {
+          "rxcharisk": {
+            "physical_name": "SLOT_2_JESD204_RX_BUS_rxcharisk",
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "rxdata": {
+            "physical_name": "SLOT_2_JESD204_RX_BUS_rxdata",
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "rxdisperr": {
+            "physical_name": "SLOT_2_JESD204_RX_BUS_rxdisperr",
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "rxnotintable": {
+            "physical_name": "SLOT_2_JESD204_RX_BUS_rxnotintable",
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "SLOT_3_JESD204_RX_BUS": {
+        "mode": "Monitor",
+        "vlnv_bus_definition": "xilinx.com:display_jesd204:jesd204_rx_bus:1.0",
+        "vlnv": "xilinx.com:display_jesd204:jesd204_rx_bus_rtl:1.0",
+        "port_maps": {
+          "rxcharisk": {
+            "physical_name": "SLOT_3_JESD204_RX_BUS_rxcharisk",
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "rxdata": {
+            "physical_name": "SLOT_3_JESD204_RX_BUS_rxdata",
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "rxdisperr": {
+            "physical_name": "SLOT_3_JESD204_RX_BUS_rxdisperr",
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "rxnotintable": {
+            "physical_name": "SLOT_3_JESD204_RX_BUS_rxnotintable",
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "SLOT_4_JESD204_TX_BUS": {
+        "mode": "Monitor",
+        "vlnv_bus_definition": "xilinx.com:display_jesd204:jesd204_tx_bus:1.0",
+        "vlnv": "xilinx.com:display_jesd204:jesd204_tx_bus_rtl:1.0",
+        "port_maps": {
+          "txcharisk": {
+            "physical_name": "SLOT_4_JESD204_TX_BUS_txcharisk",
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "txdata": {
+            "physical_name": "SLOT_4_JESD204_TX_BUS_txdata",
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "SLOT_5_JESD204_TX_BUS": {
+        "mode": "Monitor",
+        "vlnv_bus_definition": "xilinx.com:display_jesd204:jesd204_tx_bus:1.0",
+        "vlnv": "xilinx.com:display_jesd204:jesd204_tx_bus_rtl:1.0",
+        "port_maps": {
+          "txcharisk": {
+            "physical_name": "SLOT_5_JESD204_TX_BUS_txcharisk",
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "txdata": {
+            "physical_name": "SLOT_5_JESD204_TX_BUS_txdata",
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "SLOT_6_JESD204_TX_BUS": {
+        "mode": "Monitor",
+        "vlnv_bus_definition": "xilinx.com:display_jesd204:jesd204_tx_bus:1.0",
+        "vlnv": "xilinx.com:display_jesd204:jesd204_tx_bus_rtl:1.0",
+        "port_maps": {
+          "txcharisk": {
+            "physical_name": "SLOT_6_JESD204_TX_BUS_txcharisk",
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "txdata": {
+            "physical_name": "SLOT_6_JESD204_TX_BUS_txdata",
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "SLOT_7_JESD204_TX_BUS": {
+        "mode": "Monitor",
+        "vlnv_bus_definition": "xilinx.com:display_jesd204:jesd204_tx_bus:1.0",
+        "vlnv": "xilinx.com:display_jesd204:jesd204_tx_bus_rtl:1.0",
+        "port_maps": {
+          "txcharisk": {
+            "physical_name": "SLOT_7_JESD204_TX_BUS_txcharisk",
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "txdata": {
+            "physical_name": "SLOT_7_JESD204_TX_BUS_txdata",
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "system_core_clk",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "250000000",
+            "value_src": "default_prop"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default_prop"
+          }
+        }
+      },
+      "probe0": {
+        "direction": "I",
+        "left": "0",
+        "right": "0"
+      },
+      "probe1": {
+        "direction": "I",
+        "left": "0",
+        "right": "0"
+      },
+      "SLOT_0_JESD204_RX_BUS_rxcharisk": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "SLOT_0_JESD204_RX_BUS_rxdata": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "SLOT_0_JESD204_RX_BUS_rxdisperr": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "SLOT_0_JESD204_RX_BUS_rxnotintable": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "SLOT_1_JESD204_RX_BUS_rxcharisk": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "SLOT_1_JESD204_RX_BUS_rxdata": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "SLOT_1_JESD204_RX_BUS_rxdisperr": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "SLOT_1_JESD204_RX_BUS_rxnotintable": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "SLOT_2_JESD204_RX_BUS_rxcharisk": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "SLOT_2_JESD204_RX_BUS_rxdata": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "SLOT_2_JESD204_RX_BUS_rxdisperr": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "SLOT_2_JESD204_RX_BUS_rxnotintable": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "SLOT_3_JESD204_RX_BUS_rxcharisk": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "SLOT_3_JESD204_RX_BUS_rxdata": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "SLOT_3_JESD204_RX_BUS_rxdisperr": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "SLOT_3_JESD204_RX_BUS_rxnotintable": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "SLOT_4_JESD204_TX_BUS_txcharisk": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "SLOT_4_JESD204_TX_BUS_txdata": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "SLOT_5_JESD204_TX_BUS_txcharisk": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "SLOT_5_JESD204_TX_BUS_txdata": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "SLOT_6_JESD204_TX_BUS_txcharisk": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "SLOT_6_JESD204_TX_BUS_txdata": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "SLOT_7_JESD204_TX_BUS_txcharisk": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "SLOT_7_JESD204_TX_BUS_txdata": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      }
+    },
+    "components": {
+      "ila_lib": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "xci_name": "bd_d5b8_ila_lib_0",
+        "xci_path": "ip\\ip_0\\bd_d5b8_ila_lib_0.xci",
+        "inst_hier_path": "ila_lib",
+        "parameters": {
+          "ALL_PROBE_SAME_MU": {
+            "value": "TRUE"
+          },
+          "ALL_PROBE_SAME_MU_CNT": {
+            "value": "1"
+          },
+          "C_ADV_TRIGGER": {
+            "value": "FALSE"
+          },
+          "C_DATA_DEPTH": {
+            "value": "1024"
+          },
+          "C_EN_STRG_QUAL": {
+            "value": "0"
+          },
+          "C_EN_TIME_TAG": {
+            "value": "0"
+          },
+          "C_ILA_CLK_FREQ": {
+            "value": "250000000"
+          },
+          "C_INPUT_PIPE_STAGES": {
+            "value": "0"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "26"
+          },
+          "C_PROBE0_MU_CNT": {
+            "value": "1"
+          },
+          "C_PROBE0_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE0_WIDTH": {
+            "value": "1"
+          },
+          "C_PROBE10_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE10_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE11_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE11_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE12_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE12_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE13_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE13_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE14_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE14_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE15_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE15_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE16_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE16_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE17_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE17_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE18_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE18_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE19_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE19_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE1_MU_CNT": {
+            "value": "1"
+          },
+          "C_PROBE1_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE1_WIDTH": {
+            "value": "1"
+          },
+          "C_PROBE20_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE20_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE21_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE21_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE22_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE22_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE23_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE23_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE24_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE24_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE25_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE25_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE2_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE2_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE3_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE3_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE4_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE4_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE5_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE5_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE6_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE6_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE7_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE7_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE8_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE8_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE9_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE9_WIDTH": {
+            "value": "4"
+          },
+          "C_TIME_TAG_WIDTH": {
+            "value": "32"
+          },
+          "C_TRIGIN_EN": {
+            "value": "false"
+          },
+          "C_TRIGOUT_EN": {
+            "value": "false"
+          },
+          "C_XLNX_HW_PROBE_INFO": {
+            "value": "DEFAULT"
+          }
+        }
+      }
+    },
+    "nets": {
+      "SLOT_0_JESD204_RX_BUS_rxcharisk_1": {
+        "ports": [
+          "SLOT_0_JESD204_RX_BUS_rxcharisk",
+          "ila_lib/probe2"
+        ]
+      },
+      "SLOT_0_JESD204_RX_BUS_rxdata_1": {
+        "ports": [
+          "SLOT_0_JESD204_RX_BUS_rxdata",
+          "ila_lib/probe3"
+        ]
+      },
+      "SLOT_0_JESD204_RX_BUS_rxdisperr_1": {
+        "ports": [
+          "SLOT_0_JESD204_RX_BUS_rxdisperr",
+          "ila_lib/probe4"
+        ]
+      },
+      "SLOT_0_JESD204_RX_BUS_rxnotintable_1": {
+        "ports": [
+          "SLOT_0_JESD204_RX_BUS_rxnotintable",
+          "ila_lib/probe5"
+        ]
+      },
+      "SLOT_1_JESD204_RX_BUS_rxcharisk_1": {
+        "ports": [
+          "SLOT_1_JESD204_RX_BUS_rxcharisk",
+          "ila_lib/probe6"
+        ]
+      },
+      "SLOT_1_JESD204_RX_BUS_rxdata_1": {
+        "ports": [
+          "SLOT_1_JESD204_RX_BUS_rxdata",
+          "ila_lib/probe7"
+        ]
+      },
+      "SLOT_1_JESD204_RX_BUS_rxdisperr_1": {
+        "ports": [
+          "SLOT_1_JESD204_RX_BUS_rxdisperr",
+          "ila_lib/probe8"
+        ]
+      },
+      "SLOT_1_JESD204_RX_BUS_rxnotintable_1": {
+        "ports": [
+          "SLOT_1_JESD204_RX_BUS_rxnotintable",
+          "ila_lib/probe9"
+        ]
+      },
+      "SLOT_2_JESD204_RX_BUS_rxcharisk_1": {
+        "ports": [
+          "SLOT_2_JESD204_RX_BUS_rxcharisk",
+          "ila_lib/probe10"
+        ]
+      },
+      "SLOT_2_JESD204_RX_BUS_rxdata_1": {
+        "ports": [
+          "SLOT_2_JESD204_RX_BUS_rxdata",
+          "ila_lib/probe11"
+        ]
+      },
+      "SLOT_2_JESD204_RX_BUS_rxdisperr_1": {
+        "ports": [
+          "SLOT_2_JESD204_RX_BUS_rxdisperr",
+          "ila_lib/probe12"
+        ]
+      },
+      "SLOT_2_JESD204_RX_BUS_rxnotintable_1": {
+        "ports": [
+          "SLOT_2_JESD204_RX_BUS_rxnotintable",
+          "ila_lib/probe13"
+        ]
+      },
+      "SLOT_3_JESD204_RX_BUS_rxcharisk_1": {
+        "ports": [
+          "SLOT_3_JESD204_RX_BUS_rxcharisk",
+          "ila_lib/probe14"
+        ]
+      },
+      "SLOT_3_JESD204_RX_BUS_rxdata_1": {
+        "ports": [
+          "SLOT_3_JESD204_RX_BUS_rxdata",
+          "ila_lib/probe15"
+        ]
+      },
+      "SLOT_3_JESD204_RX_BUS_rxdisperr_1": {
+        "ports": [
+          "SLOT_3_JESD204_RX_BUS_rxdisperr",
+          "ila_lib/probe16"
+        ]
+      },
+      "SLOT_3_JESD204_RX_BUS_rxnotintable_1": {
+        "ports": [
+          "SLOT_3_JESD204_RX_BUS_rxnotintable",
+          "ila_lib/probe17"
+        ]
+      },
+      "SLOT_4_JESD204_TX_BUS_txcharisk_1": {
+        "ports": [
+          "SLOT_4_JESD204_TX_BUS_txcharisk",
+          "ila_lib/probe18"
+        ]
+      },
+      "SLOT_4_JESD204_TX_BUS_txdata_1": {
+        "ports": [
+          "SLOT_4_JESD204_TX_BUS_txdata",
+          "ila_lib/probe19"
+        ]
+      },
+      "SLOT_5_JESD204_TX_BUS_txcharisk_1": {
+        "ports": [
+          "SLOT_5_JESD204_TX_BUS_txcharisk",
+          "ila_lib/probe20"
+        ]
+      },
+      "SLOT_5_JESD204_TX_BUS_txdata_1": {
+        "ports": [
+          "SLOT_5_JESD204_TX_BUS_txdata",
+          "ila_lib/probe21"
+        ]
+      },
+      "SLOT_6_JESD204_TX_BUS_txcharisk_1": {
+        "ports": [
+          "SLOT_6_JESD204_TX_BUS_txcharisk",
+          "ila_lib/probe22"
+        ]
+      },
+      "SLOT_6_JESD204_TX_BUS_txdata_1": {
+        "ports": [
+          "SLOT_6_JESD204_TX_BUS_txdata",
+          "ila_lib/probe23"
+        ]
+      },
+      "SLOT_7_JESD204_TX_BUS_txcharisk_1": {
+        "ports": [
+          "SLOT_7_JESD204_TX_BUS_txcharisk",
+          "ila_lib/probe24"
+        ]
+      },
+      "SLOT_7_JESD204_TX_BUS_txdata_1": {
+        "ports": [
+          "SLOT_7_JESD204_TX_BUS_txdata",
+          "ila_lib/probe25"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "ila_lib/clk"
+        ]
+      },
+      "probe0_1": {
+        "ports": [
+          "probe0",
+          "ila_lib/probe0"
+        ]
+      },
+      "probe1_1": {
+        "ports": [
+          "probe1",
+          "ila_lib/probe1"
+        ]
+      }
+    }
+  }
+}
