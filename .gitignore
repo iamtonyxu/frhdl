@@ -13,11 +13,11 @@ vsim.wlf
 # --------------------------------------------------
 # Vivado / synthesis / implementation
 # --------------------------------------------------
-.cache/
-.hw/
-.ip_user_files/
-.runs/
-.sim/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
 .Xil/
 *.jou
 *.str
@@ -31,6 +31,7 @@ vsim.wlf
 *.xml
 *.rpt
 *.rpx
+*.log
 
 # --------------------------------------------------
 # MATLAB temporary files
