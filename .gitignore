@@ -18,6 +18,7 @@ vsim.wlf
 *.ip_user_files/
 *.runs/
 *.sim/
+*.gen/
 .Xil/
 *.jou
 *.str
